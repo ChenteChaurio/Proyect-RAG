@@ -1,0 +1,20 @@
+# Paquetes principales de LangChain
+langchain>=1.0.0
+langchain-community>=0.3.0
+langchain-groq>=1.0.0
+langchain-huggingface>=1.0.0
+langchain-pinecone>=0.2.0
+langchain-text-splitters>=1.0.0
+langchain-core>=1.0.0
+
+# Base de datos vectorial
+pinecone>=6.0.0
+
+# Embeddings locales (sin costo, sin API key)
+sentence-transformers>=3.0.0
+
+# Carga de documentos web
+beautifulsoup4>=4.12.0
+
+# Manejo de variables de entorno
+python-dotenv>=1.0.0
