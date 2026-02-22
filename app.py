@@ -14,8 +14,6 @@ py app.py --ask "¿Qué es la descomposición de tareas?"
 # Sesión interactiva de preguntas
 py app.py --interactive
 
-# Indexar Y preguntar en un solo comando
-py app.py --index --ask "¿Cuáles son los tipos de memoria en agentes de IA?"
 """
 
 import argparse
@@ -74,7 +72,7 @@ def interactive_session(chain) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Demo RAG con LangChain + OpenAI + Pinecone"
+        description="Demo RAG con LangChain + Groq + Pinecone"
     )
     parser.add_argument(
         "--index",

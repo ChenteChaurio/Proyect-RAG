@@ -131,15 +131,6 @@ def load_vector_store() -> PineconeVectorStore:
     return PineconeVectorStore(index=index, embedding=embeddings)
 
 
-# ── bloque __main__ ──────────────────────────────────────────────────────────
-    pinecone_api_key = os.environ["PINECONE_API_KEY"]
-    pc = Pinecone(api_key=pinecone_api_key)
-    index = pc.Index(INDEX_NAME)
-
-    embeddings = OpenAIEmbeddings(model=EMBEDDING_MODEL)
-    return PineconeVectorStore(index=index, embedding=embeddings)
-
-
 if __name__ == "__main__":
     # Prueba rápida: indexar el blog post y verificar que el store es consultable.
     from dotenv import load_dotenv

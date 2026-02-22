@@ -2,9 +2,10 @@
 rag.py
 ------
 Implementa el pipeline RAG (Generación con Recuperación Aumentada) usando:
-  - Pinecone  → base de datos vectorial / retriever
-  - OpenAI    → embeddings + LLM (GPT-4o-mini)
-  - LangChain → cadena LCEL con soporte de citas
+  - Pinecone         → base de datos vectorial / retriever
+  - Groq             → LLM (llama-3.3-70b-versatile)
+  - HuggingFace      → embeddings locales (all-MiniLM-L6-v2, sin API key)
+  - LangChain LCEL   → cadena declarativa con soporte de citas
 
 Se exponen dos funciones públicas:
   - build_rag_chain(vector_store)  →  retorna una cadena LCEL

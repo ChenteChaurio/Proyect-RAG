@@ -93,7 +93,7 @@ El sistema divide ese artículo en fragmentos, los convierte a vectores y los al
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<tu-usuario>/Proyect-RAG.git
+git clone https://github.com/ChenteChaurio/Proyect-RAG.git
 cd Proyect-RAG
 ```
 
